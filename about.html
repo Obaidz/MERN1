@@ -61,6 +61,104 @@
 
                     </div>
 
+                    <div class="row row-content">
+                        <div class="col-12">
+                            <h2>Members (Tab navigation)</h2>
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#pat" role="tab" data-toggle="tab">Patrick, CEO</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#dan" role="tab" data-toggle="tab">Dan the Man, CFO</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#Babu" role="tab" data-toggle="tab">Babu, CTO</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">   <!--we'll use to to make border in style.css-->
+                                <div role="tabpanel" class="tab-pane fade show active" id="pat">   <!--tabpane, conatins actual content, fade = css class, fading affect, show = it'll show this div first when page is uploaded, active to show-->
+                                    <h3>Patrick , CEO</h3>
+                                    <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade" id="dan">
+                                    <h3>Dan the Man , CFO</h3>
+                                    <p class="d-none d-sm-block">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane fade" id="Babu">
+                                    <h3>Babu , CTO</h3>
+                                    <p class="d-none d-sm-block">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
+
+
+                    <div class="row row-content">
+                        <div class="col-12">
+                            <h2>Members (Accordian example)</h2>
+                            
+
+                            <div id="accordian"> 
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="patHead">
+                                        <h3 class="mb-0"> 
+                                            <a data-toggle="collapse" data-target="#pat2"> 
+                                                Patrick <small>CEO</small> 
+                                            </a> 
+                                        </h3>
+                                    </div>
+
+                                    <div class="collapse show" id="pat2" data-parent="#accordian">  
+                                        <div class="card-body">
+                                            <p class="d-none d-sm-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div> 
+
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="danHead">
+                                        <h3 class="mb-0"> 
+                                            <a data-toggle="collapse" data-target="#dan2"> DAN the Man <small>CFO</small> </a> 
+                                        </h3>
+                                    </div>
+
+                                    <div class="collapse" id="dan2" data-parent="#accordian">  
+                                        <div class="card-body">
+                                            <p class="d-none d-sm-block">Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div> 
+
+                                <div class="card">
+                                    <div class="card-header" role="tab" id="BabuHead">
+                                        <h3 class="mb-0"> 
+                                            <a data-toggle="collapse" data-target="#Babu2"> Babu <small>CTO</small> </a> 
+                                        </h3>
+                                    </div>
+
+                                    <div class="collapse" id="Babu2" data-parent="#accordian">  
+                                        <div class="card-body">
+                                            <p class="d-none d-sm-block">Lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div> 
+
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
 
                     <div class="row row-content align-items-center">
                         <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
@@ -74,7 +172,7 @@
                         
                     </div>
 
-
+                    
                     <div class="row row-content align-items-center">
                         <div class="col-12 col-sm-4 col-md-3">
                             <h1>What?</h1>
