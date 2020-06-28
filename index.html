@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- build:css css/main.css -->
+            <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+            <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+            <link rel="stylesheet" href="css/styles.css">
+        <!-- endbuild -->
             <title>MERN Bootstrap</title>
         </head>
 
@@ -278,55 +280,13 @@
                     </div>
                 </div>
             </footer>
-
-            <script src="node_modules/jquery/dist/jquery.slim.js"></script>
-            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-            <script>
-                $(document).ready(function() {                  // jquery code for tooltip to toggle for reserver button
-                    $('[data-toggle="tooltip"]').tooltip();     // this function will be invoked automatically as the page uploads.
-                });                                             // whereever there is an attribute of tooltip in html, activate it.
-            </script>
-
-            <script>
-
-                /*
-                $(document).ready(function() {         // will run this function when page will load
-                    $('#mycarousel').carousel({
-                        interval: 2000                  // 2000 = 2000ms = 2s
-                    });
-                    
-                    $('#carousel-pause').click(function() {         // code for play pause buttons separately
-                        $('#mycarousel').carousel('pause');
-                    });
-
-                    $('#carousel-play').click(function() {
-                        $('#mycarousel').carousel('cycle');
-                    });
-                });
-                */
-
-
-                $(document).ready(function() {         // play pause for one button
-                    $('#mycarousel').carousel({
-                        interval: 1000                  
-                    });
-
-                    $('#carouselButton').click(function() {   
-                        if ($('#carouselButton').children('span').hasClass('fa-pause')) {           // if  button has a tag span (which we know it has)and that span has class 'fa-pause', then it is acting as pause button.
-                            $('#mycarousel').carousel('pause');
-                            $('#carouselButton').children('span').removeClass('fa-pause');          // So, when pause button in clicked to pause carousel,
-                            $('#carouselButton').children('span').addClass('fa-play');              //pause it, change children class (span) pause icon, remove it and add (play icon to span).
-                        }    
-                        else {
-                            $('#mycarousel').carousel('cycle');
-                            $('#carouselButton').children('span').removeClass('fa-play');          // So, when play button in clicked to play carousel,
-                            $('#carouselButton').children('span').addClass('fa-pause');             //play it, change children class (span) play icon, remove it and add (pause icon to span).
-                        }
-                    });
-
-                });
-
-            </script>
+            <!--Jquery first, then popper then js -->
+            
+            <!-- build:js js/main.js-->
+                <script src="node_modules/jquery/dist/jquery.slim.js"></script>
+                <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+                <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                <script src="js/scripts.js"></script>
+            <!-- endbuild -->    
         </body>
     </html>
