@@ -22,6 +22,10 @@ $(document).ready(function() {                  // jquery code for tooltip to to
     $('[data-toggle="tooltip"]').tooltip();     // this function will be invoked automatically as the page uploads.
 }); 
 
+$(document).ready(function() {                  
+    
+});
+
 
 /*
                 $(document).ready(function() {         // will run this function when page will load
